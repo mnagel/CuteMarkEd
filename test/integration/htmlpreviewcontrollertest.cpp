@@ -16,7 +16,6 @@
  */
 #include "htmlpreviewcontrollertest.h"
 
-#include <QApplication>
 #include <QtTest>
 #include <QWebView>
 
@@ -28,7 +27,9 @@ void HtmlPreviewControllerTest::initTestCase()
     controller = new HtmlPreviewController(webView);
 
     webView->show();
-    qApp->setActiveWindow(webView);
+    QTest::qWaitForWindowExposed(webView);
+    webView->activateWindow();
+    QTest::qWaitForWindowActive(webView);
 }
 
 void HtmlPreviewControllerTest::cleanupTestCase()
