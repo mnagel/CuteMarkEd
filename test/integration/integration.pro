@@ -15,15 +15,19 @@ SOURCES += \
     htmlpreviewcontrollertest.cpp \
     jsonsnippetfiletest.cpp \
     main.cpp \
+    markdowneditorcontrollertest.cpp \
     revealmarkdownconvertertest.cpp \
-    ../../app/htmlpreviewcontroller.cpp
+    ../../app/htmlpreviewcontroller.cpp \
+    ../../app/markdowneditorcontroller.cpp
 
 HEADERS += \
     discountmarkdownconvertertest.h \
     htmlpreviewcontrollertest.h \
     jsonsnippetfiletest.h \
+    markdowneditorcontrollertest.h \
     revealmarkdownconvertertest.h \
-    ../../app/htmlpreviewcontroller.h
+    ../../app/htmlpreviewcontroller.h \
+    ../../app/markdowneditorcontroller.h
 
 target.CONFIG += no_default_install
 

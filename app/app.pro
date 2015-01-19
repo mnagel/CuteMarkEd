@@ -58,7 +58,8 @@ SOURCES += \
     imagetooldialog.cpp \
     snippetcompleter.cpp \
     aboutdialog.cpp \
-    htmlpreviewcontroller.cpp
+    htmlpreviewcontroller.cpp \
+    markdowneditorcontroller.cpp
 
 win32 {
     SOURCES += \
@@ -95,7 +96,8 @@ HEADERS  += \
     imagetooldialog.h \
     snippetcompleter.h \
     aboutdialog.h \
-    htmlpreviewcontroller.h
+    htmlpreviewcontroller.h \
+    markdowneditorcontroller.h
 
 FORMS    += \
     mainwindow.ui \
